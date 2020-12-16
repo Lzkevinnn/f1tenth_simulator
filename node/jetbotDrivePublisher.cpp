@@ -65,9 +65,14 @@ public:
         }else if(msg.data == "d") {
             leftWheelSpeed = 1.0*rotationWheelSpeedScale;
             rightWheelSpeed = -1.0*rotationWheelSpeedScale;
+
+        }else if (msg.data =="c"){
+            leftWheelSpeed = 0.5;
+            rightWheelSpeed = 1.0;
+        
         }else if (msg.data ==" "){
             leftWheelSpeed = 0.0;
-            rightWheelSpeed = 0.0;
+            rightWheelSpeed = 0.0;    
         }else {
             publish = false;
         }
