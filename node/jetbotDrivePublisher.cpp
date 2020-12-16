@@ -68,7 +68,7 @@ public:
 
         }else if (msg.data =="c"){
             leftWheelSpeed = 0.5;
-            rightWheelSpeed = 1.0;
+            rightWheelSpeed = 1.1;
         
         }else if (msg.data ==" "){
             leftWheelSpeed = 0.0;
