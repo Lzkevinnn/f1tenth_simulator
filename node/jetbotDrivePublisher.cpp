@@ -53,10 +53,15 @@ public:
         if (msg.data == "w"){
             leftWheelSpeed = 1.0;
             rightWheelSpeed = 1.0;
-        
-        }else if(msg.data=="s"){
+
+        }else if(msg.data == "s"){
             leftWheelSpeed = -1.0;
             rightWheelSpeed = -1.0;
+
+	}else if(msg.data == "c"){
+            leftWheelSpeed = 0.5;
+	ROS_INFO("press c");
+            rightWheelSpeed = leftWheelSpeed*1.1;
 
         }else if(msg.data == "a"){
             leftWheelSpeed = -1.0*rotationWheelSpeedScale;
@@ -65,9 +70,11 @@ public:
         }else if(msg.data == "d") {
             leftWheelSpeed = 1.0*rotationWheelSpeedScale;
             rightWheelSpeed = -1.0*rotationWheelSpeedScale;
-        }else if (msg.data ==" "){
+
+	    }else if (msg.data == " "){
             leftWheelSpeed = 0.0;
             rightWheelSpeed = 0.0;
+
         }else {
             publish = false;
         }
