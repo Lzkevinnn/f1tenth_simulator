@@ -71,10 +71,20 @@ public:
             leftWheelSpeed = 1.0*rotationWheelSpeedScale;
             rightWheelSpeed = -1.0*rotationWheelSpeedScale;
 
+<<<<<<< HEAD
 	    }else if (msg.data == " "){
             leftWheelSpeed = 0.0;
             rightWheelSpeed = 0.0;
 
+=======
+        }else if (msg.data =="c"){
+            leftWheelSpeed = 0.5;
+            rightWheelSpeed = 11;
+        
+        }else if (msg.data ==" "){
+            leftWheelSpeed = 0.0;
+            rightWheelSpeed = 0.0;    
+>>>>>>> 4e41a5962d0634a0e88d28cd755ed2aad87ac065
         }else {
             publish = false;
         }
