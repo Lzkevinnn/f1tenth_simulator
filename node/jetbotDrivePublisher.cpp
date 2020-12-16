@@ -60,7 +60,7 @@ public:
 
 	}else if(msg.data == "c"){
             leftWheelSpeed = 0.5;
-	ROS_INFO("WORK!!!!");
+	ROS_INFO("WORK again!!!!");
             rightWheelSpeed = leftWheelSpeed*1.1;
 
         }else if(msg.data == "a"){
